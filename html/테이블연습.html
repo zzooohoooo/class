@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블연습</title>
+</head>
+<body>
+  <h1>테이블연습</h1>
+  <!-- 테이블시작끝 선언 -->
+  <table border="1">
+    <!-- 줄선언 -->
+    <tr>
+      <!-- 데이타들어갈 칸 선언 -->
+      <td>지역</td>
+      <td>세부담당</td>
+      <td>전화번호</td>
+      <td>이름</td>
+   </tr>
+   <!-- 줄선언 -->
+   <tr>
+      <!-- 데이타들어갈 칸 선언 -->
+      <td>용인</td>
+      <td>구성</td>
+      <td>031-1234-1234</td>
+      <td>홍길동</td>
+    </tr>
+  </table>
+
+  <h2>논리적인 테이블 영역 구분</h2>
+  <style>
+    thead{background-color: #8f6;}
+    tfoot{background-color: #68f;}
+  </style>
+  <table border="1">
+    <!-- 표의머리글 -->
+    <thead>
+      <!-- tr>td*3>{머리글$} -->
+      <tr>
+        <td>머리글1</td>
+        <td>머리글2</td>
+        <td>머리글3</td>
+      </tr>
+      <!-- tr>th*3>{제목} -->
+      <tr>
+        <th>제목</th>
+        <th>제목</th>
+        <th>제목</th>
+      </tr>
+    </thead>
+    <!-- 표의본문 -->
+    <tbody>
+      <!-- tr*4>td*3>{내용} -->
+      <tr>
+        <td>내용</td>
+        <td>내용</td>
+        <td>내용</td>
+      </tr>
+      <tr>
+        <td>내용</td>
+        <td>내용</td>
+        <td>내용</td>
+      </tr>
+      <tr>
+        <td>내용</td>
+        <td>내용</td>
+        <td>내용</td>
+      </tr>
+      <tr>
+        <td>내용</td>
+        <td>내용</td>
+        <td>내용</td>
+      </tr>
+    </tbody>
+    <!-- 표의 꼬리글 -->
+    <tfoot>
+      <!-- tr*2>td*3{꼬리말$} -->
+      <tr>
+        <td>꼬리말1</td>
+        <td>꼬리말2</td>
+        <td>꼬리말3</td>
+      </tr>
+      <tr>
+        <td>꼬리말1</td>
+        <td>꼬리말2</td>
+        <td>꼬리말3</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
