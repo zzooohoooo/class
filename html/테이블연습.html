@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>테이블연습</title>
+  <style>
+    body{height: 4000px;}
+    /*body의 높이를 4000px로 지정*/
+  </style>
 </head>
 <body>
   <h1>테이블연습</h1>
@@ -87,5 +91,131 @@
       </tr>
     </tfoot>
   </table>
+  <h2>테이블의 제목셀 th</h2>
+   <table border="1">
+    <!-- tr>th*4>{제목$} -->
+    <tr>
+      <th></th>
+      <th scope="col">제목2</th>
+      <th scope="col">제목3</th>
+      <th scope="col">제목4</th>
+    </tr>
+    <!-- tr*2>td*4>{내용} -->
+    <tr>
+      <th scope="row">제목</th>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+    <tr>
+      <th scope="row">제목</th>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+   </table>
+   <h2>컬럼의 논리적은 그룹 colgroup cols</h2>
+   <table class="table4">
+    <style>
+      .table4{
+        border:1px solid #000; 
+        width:80%;
+      }
+    </style>
+    <colgroup>
+      <!-- 
+      col.col1
+      col.col23
+      col.col4 
+    -->
+      <col class="col1">
+      <col class="col23" span="2"><!--span 몇개를 포함-->
+      <col class="col4">
+    </colgroup>
+    <style>
+      .col1{background-color: #8f6;}
+      .col23{background-color: #f68;}
+      .col4{background-color: #68f;}
+    </style>
+    <!-- tr>th*4>{제목$} -->
+    <tr>
+      <th>제목1</th>
+      <th>제목2</th>
+      <th>제목3</th>
+      <th>제목4</th>
+    </tr>
+    <!-- tr*4>td*4>{내용} -->
+    <tr>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+    <tr>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+    <tr>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+    <tr>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+    </tr>
+   </table>
+   <h2>줄칸 합치기 colsapn rowspan</h2>
+   <table border="1" width="80%">
+     <!-- 6줄4칸 -->
+     <!-- tr*6>td*4>{내용} -->
+     <!-- 첫번재줄 tr -->
+     <tr>
+      <td rowspan="2">내용</td>
+      <td>내용</td>
+      <!-- 1줄 3칸 -->
+      <td colspan="2">1줄3칸</td>
+      <!-- <td>내용</td> -->
+     </tr>
+     <!-- 두번째 tr -->
+     <tr>
+      <!-- <td>내용</td> -->
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+     </tr>
+     <!-- 세번째 tr -->
+     <tr>
+      <td rowspan="2">세번째</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+     </tr>
+     <tr>
+      <!-- <td>내용</td> -->
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+     </tr>
+     <!-- 다섯번째 tr -->
+     <tr>
+      <td rowspan="2">프로트엔트</td>
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+     </tr>
+     <tr>
+      <!-- <td>내용</td> -->
+      <td>내용</td>
+      <td>내용</td>
+      <td>내용</td>
+     </tr>
+   </table>
+
 </body>
 </html>
