@@ -4,6 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>css선택자연습</title>
+  <style>
+    /*선택자{속성:값;}*/
+    /* div.container 배경색 회색 */
+    /* div{background-color: #ccc;} */
+    /* 
+    선택자 : div
+    문서내의 모든 div를 css를 선언
+    div{속성:값}
+    */
+
+
+    /* div.container{background-color: #ccc;} */
+    .container{
+      background-color: #ccc;
+      padding: 50px;
+    
+    }
+
+    /* 
+    문서내 모든 section태그 배경색 파랑색
+    */
+    section{background-color: #00f;}
+
+    /* 
+    section#section1의 배경색을 빨강색
+     */
+     #section1{background-color: #f00;}
+
+
+    /* 
+    #section2 자식 p태그 배경색 초록색
+    */
+
+    /* p{background-color: #0f0;} */
+    /* 
+    후손선택자 공백 조상□후송
+    #section2 p{background-color: #0f0;} 
+    */
+    /* #section2 자식 p태그 배경색 초록색 
+    자식선택자 부모>자식
+    */
+    #section2>p{background-color: #0f0;}
+    
+    /* #section2>p{background-color: #ff0000;}  #f00*/
+    /* #section2>p{background-color: #00ff00;} #0f0*/
+    
+    /*  */
+    /* #section2 자식 p태그 배경색 cyan */
+    #section2>p{background-color: #0ff}
+  </style>
 </head>
 <body>
   <!-- #wrap>header+.container+footer -->
