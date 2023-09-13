@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css선택자연습</title>
+</head>
+<body>
+  <!-- #wrap>header+.container+footer -->
+  <div id="wrap">
+    <header>
+      header
+    </header>
+    <div class="container">
+      <!-- section*3#section$ -->
+      <section id="section1">
+        section1
+      </section>
+      <section id="section2">
+        section2
+        <!-- p+.box>h1+p*2 -->
+        <p>section2&gt;p</p>
+        <div class="box">
+          section2&gt;p&gt;div.box
+          <h1>section2&gt;p&gt;div.box&gt;h1</h1>
+          <p>section2&gt;p&gt;div.box&gt;p</p>
+          <p>section2&gt;p&gt;div.box&gt;p</p>
+        </div>
+      </section>
+      <section id="section3">
+        section3
+      </section>
+    </div>
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
